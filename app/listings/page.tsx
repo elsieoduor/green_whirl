@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Phone, Mail, MapPin, Home, Heart, Bed, Bath, Square, Filter, Search, Star } from "lucide-react"
 import { Navigation } from "@/components/nav"
+import Image from "next/image"
 
 export const metadata = {
   title: "Properties for Sale - Green Whirl | Affordable Homes for Couples",
@@ -189,7 +190,7 @@ export default function ShopPage() {
                   className="overflow-hidden border-border bg-card hover:shadow-lg transition-all duration-300 group"
                 >
                   <div className="relative aspect-video bg-muted overflow-hidden">
-                    <img
+                    <Image
                       src={property.image || "/placeholder.svg"}
                       alt={property.title}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
@@ -267,7 +268,7 @@ export default function ShopPage() {
                 className="overflow-hidden border-border bg-card hover:shadow-lg transition-all duration-300 group"
               >
                 <div className="relative aspect-video bg-muted overflow-hidden">
-                  <img
+                  <Image
                     src={property.image || "/placeholder.svg"}
                     alt={property.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
@@ -346,9 +347,9 @@ export default function ShopPage() {
       {/* Call to Action */}
       <section className="py-16 px-4">
         <div className="container mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Didn't Find What You're Looking For?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Didn&apos;t Find What You&apos;re Looking For?</h2>
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Our team is constantly adding new properties. Let us know what you're looking for and we'll help you find
+            Our team is constantly adding new properties. Let us know what you&apos;re looking for and we&apos;ll help you find
             your perfect home.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
