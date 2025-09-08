@@ -125,7 +125,7 @@ Push to main branch → triggers automatic deployment.
 
 Environment variables managed via Vercel dashboard.
 
-Live site: https://green-whirl.vercel.app
+Live site: https://green-whirl.vercel.app/
 
 🎨 Design Guidelines
 

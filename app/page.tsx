@@ -50,7 +50,7 @@ export default function HomePage() {
             <div className="relative order-first lg:order-last">
               <div className="aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="/elegant-modern-home-exterior-with-couple-standing-.jpg"
+                  src="/image.png"
                   alt="Elegant home with happy couple"
                   className="w-full h-full object-cover"
                 />
@@ -151,7 +151,7 @@ export default function HomePage() {
                 bedrooms: 2,
                 bathrooms: 2,
                 sqft: "1,450",
-                image: "/cozy-cottage-garden.png",
+                image: "/cottege.png",
                 featured: true,
               },
               {
@@ -161,7 +161,7 @@ export default function HomePage() {
                 bedrooms: 3,
                 bathrooms: 2,
                 sqft: "1,680",
-                image: "/modern-townhouse-exterior.png",
+                image: "/townhouse.png",
                 featured: false,
               },
               {
@@ -171,7 +171,7 @@ export default function HomePage() {
                 bedrooms: 2,
                 bathrooms: 1,
                 sqft: "1,200",
-                image: "/charming-bungalow-home.jpg",
+                image: "/bungalow.png",
                 featured: false,
               },
             ].map((property, index) => (
