@@ -1,36 +1,161 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+🌿 Green Whirl Website
 
-## Getting Started
+Green Whirl is a fullstack web project built for a housing company that offers affordable homes in amazing locations, targeting married couples. The website is designed to spread brand awareness, improve search rankings, and provide users with an inviting and colorful experience.
 
-First, run the development server:
+The site emphasizes comfort and approachability, featuring the brand’s primary color orange across a warm and family-friendly interface.
 
-```bash
+✨ Features
+
+Landing Page
+
+Hero section with inviting imagery and strong CTA to call for more information.
+
+Contact Us section with a contact form and direct call option.
+
+Featured Homes grid with sample properties.
+
+“Why Choose Us” section with trust-building highlights.
+
+About Page
+
+Story of Green Whirl and its mission to provide affordable homes.
+
+Values: Comfort, affordability, family-first, and prime locations.
+
+Shop Page
+
+Browse available homes with a clean grid layout.
+
+Filters: Location, price range, bedrooms.
+
+Property cards with images, price, and quick info request.
+
+Terms of Service Page
+
+Legal and compliance information for transparency.
+
+SEO Optimized
+
+Semantic structure and meta tags.
+
+Real estate schema markup.
+
+Keyword-focused content for better search rankings.
+
+Responsive Design
+
+Fully optimized for mobile, tablet, and desktop.
+
+🛠 Tech Stack
+
+Frontend: Next.js
+ + TypeScript
+
+Styling: Tailwind CSS
+
+Backend/Database: Supabase
+
+Deployment: Vercel
+
+Analytics: Vercel Analytics
+
+📂 Project Structure
+green-whirl/
+│── public/              # Static assets (images, icons)
+│── src/
+│   ├── components/      # Reusable UI components
+│   ├── pages/
+│   │   ├── index.tsx    # Landing page
+│   │   ├── about.tsx    # About page
+│   │   ├── shop.tsx     # Shop page
+│   │   └── terms.tsx    # Terms of Service
+│   ├── styles/          # Global styles
+│   ├── lib/             # Supabase client & utilities
+│   └── hooks/           # Custom hooks
+│── .env.local           # Environment variables
+│── package.json
+│── README.md
+
+⚡ Getting Started
+Prerequisites
+
+Node.js (v18+)
+
+npm or yarn
+
+Supabase account
+
+Installation
+
+Clone the repository
+
+git clone https://github.com/elsieoduor/green_whirl.git
+cd green_whirl
+
+
+Install dependencies
+
+npm install
+# or
+yarn install
+
+
+Set up environment variables
+Create a .env.local file in the root and add:
+
+NEXT_PUBLIC_SUPABASE_URL=your-supabase-url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your-supabase-anon-key
+
+
+Run the development server
+
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Open http://localhost:3000
+ to view in the browser.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+🚀 Deployment
 
-## Learn More
+Deployed on Vercel for seamless CI/CD.
 
-To learn more about Next.js, take a look at the following resources:
+Push to main branch → triggers automatic deployment.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Environment variables managed via Vercel dashboard.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Live site: https://green-whirl.vercel.app
 
-## Deploy on Vercel
+🎨 Design Guidelines
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Primary Color: Orange (brand identity)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Secondary Colors: Warm neutrals (beige, cream, light gray)
+
+Accent: Green (to reflect the brand name Green Whirl)
+
+Typography:
+
+Headings: Poppins (modern sans-serif)
+
+Body: Merriweather (serif, warm tone)
+
+📌 Roadmap
+
+ Add property detail pages with image galleries.
+
+ Implement advanced search filters.
+
+ Add user accounts for saved homes & favorites.
+
+ Expand SEO with a blog (home-buying tips).
+
+📜 License
+
+This project is licensed under the MIT License.
+
+👩‍💻 Author
+Elsie Oduor
+GitHub: @elsieoduor
+Portfolio: https://elsieoduor.vercel.app
