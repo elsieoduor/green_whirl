@@ -258,8 +258,8 @@ export default function HomePage() {
                   ))}
                 </div>
                 <blockquote className="text-base sm:text-lg text-muted-foreground leading-relaxed italic">
-                  "Green Whirl transformed our home-buying experience into something truly magical. Their attention to
-                  detail and understanding of what couples need made all the difference."
+                  &apos;Green Whirl transformed our home-buying experience into something truly magical. Their attention to
+                  detail and understanding of what couples need made all the difference.&apos;
                 </blockquote>
                 <div className="flex items-center gap-4">
                   <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary/10 rounded-full flex items-center justify-center">
@@ -282,8 +282,8 @@ export default function HomePage() {
                   ))}
                 </div>
                 <blockquote className="text-base sm:text-lg text-muted-foreground leading-relaxed italic">
-                  "From our first consultation to moving day, the Green Whirl team exceeded every expectation. Our
-                  townhouse is everything we dreamed of and more."
+                  &apos;From our first consultation to moving day, the Green Whirl team exceeded every expectation. Our
+                  townhouse is everything we dreamed of and more.&apos;
                 </blockquote>
                 <div className="flex items-center gap-4">
                   <div className="w-10 h-10 sm:w-12 sm:h-12 bg-accent/10 rounded-full flex items-center justify-center">
@@ -335,7 +335,7 @@ export default function HomePage() {
               <CardHeader className="text-center pb-6">
                 <CardTitle className="font-heading text-xl sm:text-2xl text-card-foreground">Get In Touch</CardTitle>
                 <CardDescription className="text-muted-foreground text-base sm:text-lg">
-                  Share your vision with us and we'll help make it a reality.
+                  Share your vision with us and we&apos;ll help make it a reality.
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-4 sm:space-y-6 p-6 sm:p-8">
