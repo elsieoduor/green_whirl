@@ -1,8 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Phone, Mail, MapPin, Home, Heart, Users, Award, Clock, Shield, Star } from "lucide-react"
-import Link from "next/link"
+import { Phone, MapPin, Home, Heart, Users, Award, Clock, Shield, Star } from "lucide-react"
 import { Navigation } from "@/components/nav"
 
 export const metadata = {
@@ -26,7 +25,7 @@ export default function AboutPage() {
               About <span className="text-primary">Green Whirl</span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto text-pretty">
-              We're more than just a real estate company. We're your partners in finding the perfect home where your
+              We&apos;re more than just a real estate company. We&apos;re your partners in finding the perfect home where your
               love story continues to unfold.
             </p>
           </div>
@@ -47,10 +46,10 @@ export default function AboutPage() {
                 <p>
                   Our founders, Sarah and Michael Thompson, experienced firsthand the challenges couples face when
                   searching for their first home. The process was overwhelming, expensive, and often left them feeling
-                  lost in a sea of options that didn't fit their needs or budget.
+                  lost in a sea of options that didn&apos;t fit their needs or budget.
                 </p>
                 <p>
-                  That's when they decided to create Green Whirl - a real estate company that truly understands what
+                  That&apos;s when they decided to create Green Whirl - a real estate company that truly understands what
                   matters most to couples starting their journey together: comfort, affordability, and locations that
                   enhance their quality of life.
                 </p>
@@ -129,7 +128,7 @@ export default function AboutPage() {
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-muted-foreground">
-                  We're committed to delivering exceptional service and helping you find not just a house, but your
+                  We&apos;re committed to delivering exceptional service and helping you find not just a house, but your
                   dream home.
                 </CardDescription>
               </CardContent>
@@ -259,7 +258,7 @@ export default function AboutPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground">
-                  Jessica's warm approach and attention to detail make the home-buying process smooth and enjoyable for
+                  Jessica&apos;s warm approach and attention to detail make the home-buying process smooth and enjoyable for
                   every couple.
                 </p>
               </CardContent>
@@ -273,7 +272,7 @@ export default function AboutPage() {
         <div className="container mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Ready to Start Your Journey?</h2>
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Join the hundreds of couples who have found their perfect home with Green Whirl. Let's make your dream home
+            Join the hundreds of couples who have found their perfect home with Green Whirl. Let&apos;s make your dream home
             a reality.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
