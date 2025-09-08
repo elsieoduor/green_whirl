@@ -19,6 +19,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Label } from "@/components/ui/label"
 import { Plus, Edit, Trash2, Home, MapPin, Bed, Bath, Square, Search, Filter, MoreHorizontal } from "lucide-react"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
+import { Navigation } from "@/components/nav"
 
 interface Property {
   id: number
@@ -45,7 +46,7 @@ const initialProperties: Property[] = [
     bathrooms: 2,
     sqft: 1450,
     description: "A charming cottage with beautiful garden views and modern amenities.",
-    image: "/cozy-cottage-garden.png",
+    image: "/cottege.png",
     status: "available",
     featured: true,
   },
@@ -58,7 +59,7 @@ const initialProperties: Property[] = [
     bathrooms: 2,
     sqft: 1680,
     description: "Contemporary townhouse with river views and premium finishes.",
-    image: "/modern-townhouse-exterior.png",
+    image: "/townhouse.png",
     status: "available",
     featured: false,
   },
@@ -71,7 +72,7 @@ const initialProperties: Property[] = [
     bathrooms: 1,
     sqft: 1200,
     description: "Cozy bungalow in a quiet neighborhood with mature trees.",
-    image: "/charming-bungalow-home.jpg",
+    image: "/bungalow.png",
     status: "sold",
     featured: false,
   },
@@ -176,6 +177,7 @@ export default function AdminDashboard() {
   return (
     <AuthGuard requireAdmin={true}>
       <div className="min-h-screen bg-background">
+        <Navigation />
         {/* Header */}
         <div className="border-b border-border bg-card">
           <div className="container mx-auto px-4 py-6">

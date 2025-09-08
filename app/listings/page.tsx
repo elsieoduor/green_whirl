@@ -24,7 +24,7 @@ const properties = [
     bedrooms: 2,
     bathrooms: 2,
     sqft: 1200,
-    image: "/cozy-cottage-garden.png",
+    image: "/cottege.png",
     featured: true,
     description: "Charming cottage with beautiful garden views, perfect for couples who love outdoor living.",
     amenities: ["Garden", "Fireplace", "Updated Kitchen", "Hardwood Floors"],
@@ -37,7 +37,7 @@ const properties = [
     bedrooms: 3,
     bathrooms: 2,
     sqft: 1450,
-    image: "/modern-townhouse-exterior.png",
+    image: "/townhouse.png",
     featured: true,
     description: "Contemporary townhouse with open floor plan and modern amenities in a vibrant neighborhood.",
     amenities: ["Open Floor Plan", "Garage", "Modern Appliances", "Patio"],
@@ -50,7 +50,7 @@ const properties = [
     bedrooms: 2,
     bathrooms: 1,
     sqft: 1100,
-    image: "/charming-bungalow-home.jpg",
+    image: "/bungalow.png",
     featured: false,
     description: "Classic bungalow with vintage charm and modern updates in a quiet neighborhood.",
     amenities: ["Vintage Details", "Large Lot", "Updated Bathroom", "Front Porch"],
@@ -63,7 +63,7 @@ const properties = [
     bedrooms: 3,
     bathrooms: 2,
     sqft: 1350,
-    image: "/sunny-ranch-style-home-exterior.jpg",
+    image: "/image.png",
     featured: false,
     description: "Bright ranch home with large windows and spacious backyard, ideal for entertaining.",
     amenities: ["Large Backyard", "Bright Interior", "Master Suite", "Dining Room"],
@@ -76,7 +76,7 @@ const properties = [
     bedrooms: 2,
     bathrooms: 2,
     sqft: 1300,
-    image: "/victorian-style-duplex-home.jpg",
+    image: "/duplex.png",
     featured: false,
     description: "Beautiful Victorian duplex with period details and rental income potential.",
     amenities: ["Period Details", "Rental Income", "High Ceilings", "Original Molding"],
@@ -89,7 +89,7 @@ const properties = [
     bedrooms: 2,
     bathrooms: 2,
     sqft: 1000,
-    image: "/modern-contemporary-condo-building.jpg",
+    image: "/condo.png",
     featured: false,
     description: "Sleek condo in the heart of downtown with city views and modern amenities.",
     amenities: ["City Views", "Gym Access", "Rooftop Deck", "Concierge"],
@@ -190,7 +190,7 @@ export default function ShopPage() {
                   className="overflow-hidden border-border bg-card hover:shadow-lg transition-all duration-300 group"
                 >
                   <div className="relative aspect-video bg-muted overflow-hidden">
-                    <Image
+                    <img
                       src={property.image || "/placeholder.svg"}
                       alt={property.title}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
@@ -268,7 +268,7 @@ export default function ShopPage() {
                 className="overflow-hidden border-border bg-card hover:shadow-lg transition-all duration-300 group"
               >
                 <div className="relative aspect-video bg-muted overflow-hidden">
-                  <Image
+                  <img
                     src={property.image || "/placeholder.svg"}
                     alt={property.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
