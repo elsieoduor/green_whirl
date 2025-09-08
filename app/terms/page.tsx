@@ -27,7 +27,7 @@ export default function TermsPage() {
               Terms of <span className="text-primary">Service</span>
             </h1>
             <p className="text-lg text-muted-foreground mb-6 max-w-2xl mx-auto">
-              Please read these terms and conditions carefully before using Green Whirl's services.
+              Please read these terms and conditions carefully before using Green Whirl&apos;s services.
             </p>
             <div className="flex items-center justify-center text-sm text-muted-foreground">
               <Clock className="h-4 w-4 mr-2" />
@@ -48,8 +48,8 @@ export default function TermsPage() {
               </CardHeader>
               <CardContent className="space-y-4 text-muted-foreground">
                 <p>
-                  Welcome to Green Whirl. These Terms of Service ("Terms") govern your use of our website, services, and
-                  any related applications or services provided by Green Whirl ("we," "us," or "our").
+                  Welcome to Green Whirl. These Terms of Service (&apos;Terms&apos;) govern your use of our website, services, and
+                  any related applications or services provided by Green Whirl (&apos;we,&apos; &apos;us,&apos; or &apos;our&apos;).
                 </p>
                 <p>
                   By accessing or using our services, you agree to be bound by these Terms. If you do not agree to these
@@ -256,7 +256,7 @@ export default function TermsPage() {
             <div className="text-center">
               <h3 className="text-xl font-semibold text-foreground mb-4">Agreement Acknowledgment</h3>
               <p className="text-muted-foreground mb-6">
-                By using Green Whirl's services, you acknowledge that you have read, understood, and agree to be bound
+                By using Green Whirl&apos;s services, you acknowledge that you have read, understood, and agree to be bound
                 by these Terms of Service.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
