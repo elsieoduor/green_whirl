@@ -20,8 +20,22 @@ import { Label } from "@/components/ui/label"
 import { Plus, Edit, Trash2, Home, MapPin, Bed, Bath, Square, Search, Filter, MoreHorizontal } from "lucide-react"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
 
+interface Property {
+  id: number
+  title: string
+  price: number
+  location: string
+  bedrooms: number
+  bathrooms: number
+  sqft: number
+  description: string
+  image: string
+  status: string
+  featured: boolean
+}
+
 // Mock data for properties
-const initialProperties = [
+const initialProperties: Property[] = [
   {
     id: 1,
     title: "Garden Sanctuary Cottage",
@@ -64,12 +78,12 @@ const initialProperties = [
 ]
 
 export default function AdminDashboard() {
-  const [properties, setProperties] = useState(initialProperties)
   const [searchTerm, setSearchTerm] = useState("")
   const [statusFilter, setStatusFilter] = useState("all")
   const [isAddDialogOpen, setIsAddDialogOpen] = useState(false)
   const [isEditDialogOpen, setIsEditDialogOpen] = useState(false)
-  const [editingProperty, setEditingProperty] = useState(null)
+  const [properties, setProperties] = useState<Property[]>(initialProperties)
+  const [editingProperty, setEditingProperty] = useState<Property | null>(null)
   const [formData, setFormData] = useState({
     title: "",
     price: "",
@@ -79,9 +93,10 @@ export default function AdminDashboard() {
     sqft: "",
     description: "",
     image: "",
-    status: "available",
+    status: "available" as "available" | "pending" | "sold",
     featured: false,
   })
+
 
   const filteredProperties = properties.filter((property) => {
     const matchesSearch =
@@ -116,9 +131,11 @@ export default function AdminDashboard() {
     setIsAddDialogOpen(false)
   }
 
-  const handleEditProperty = () => {
+    const handleEditProperty = () => {
+    if (!editingProperty) return // safety check
+
     const updatedProperties = properties.map((property) =>
-      property.id === editingProperty.id
+        property.id === editingProperty.id
         ? {
             ...editingProperty,
             ...formData,
@@ -126,19 +143,20 @@ export default function AdminDashboard() {
             bedrooms: Number.parseInt(formData.bedrooms),
             bathrooms: Number.parseInt(formData.bathrooms),
             sqft: Number.parseInt(formData.sqft),
-          }
+            }
         : property,
     )
+
     setProperties(updatedProperties)
     setIsEditDialogOpen(false)
     setEditingProperty(null)
-  }
+    }
 
-  const handleDeleteProperty = (id) => {
+  const handleDeleteProperty = (id:number) => {
     setProperties(properties.filter((property) => property.id !== id))
   }
 
-  const openEditDialog = (property) => {
+  const openEditDialog = (property:Property) => {
     setEditingProperty(property)
     setFormData({
       title: property.title,
@@ -149,7 +167,7 @@ export default function AdminDashboard() {
       sqft: property.sqft.toString(),
       description: property.description,
       image: property.image,
-      status: property.status,
+      status: property.status as "available" | "pending" | "sold",
       featured: property.featured,
     })
     setIsEditDialogOpen(true)
@@ -288,7 +306,7 @@ export default function AdminDashboard() {
                         </Label>
                         <Select
                           value={formData.status}
-                          onValueChange={(value) => setFormData({ ...formData, status: value })}
+                          onValueChange={(value) => setFormData({ ...formData, status: value as "available" | "pending" | "sold" })}
                         >
                           <SelectTrigger>
                             <SelectValue />
@@ -613,7 +631,7 @@ export default function AdminDashboard() {
                   </Label>
                   <Select
                     value={formData.status}
-                    onValueChange={(value) => setFormData({ ...formData, status: value })}
+                    onValueChange={(value) => setFormData({ ...formData, status: value as "available" | "pending" | "sold" })}
                   >
                     <SelectTrigger>
                       <SelectValue />
